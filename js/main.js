@@ -138,6 +138,9 @@ const WEB3FORMS_KEY = '';
     if (!window.gsap || !window.ScrollTrigger || reduceMotion) return;
     gsap.registerPlugin(ScrollTrigger);
     const mm = gsap.matchMedia();
+    // Страховка: если браузер притормаживает анимацию (слабое устройство,
+    // режим энергосбережения), через заданное время показываем всё сразу.
+    const ensure = (anim, ms) => { setTimeout(() => { if (anim && anim.progress() < 1) anim.progress(1); }, ms); return anim; };
 
     // Разбиваем заголовки на слова, чтобы они «выезжали» снизу
     $$('[data-split]').forEach(el => {
@@ -146,7 +149,7 @@ const WEB3FORMS_KEY = '';
       el.innerHTML = words.map(w => `<span class="w" aria-hidden="true" style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.06em"><span class="wi" style="display:inline-block">${w}</span></span>`).join(' ');
       gsap.from($$('.wi', el), {
         yPercent: 110, duration: 1, ease: 'power4.out', stagger: .08,
-        scrollTrigger: { trigger: el, start: 'top 85%' }
+        scrollTrigger: { trigger: el, start: 'top 85%', onEnter: self => ensure(self.animation, 2000) }
       });
     });
 
@@ -159,6 +162,7 @@ const WEB3FORMS_KEY = '';
       .from('.hero__plate', { scale: .82, rotation: -35, opacity: 0, duration: 1.4, ease: 'power3.out' }, '-=1.1')
       .from('.hero__offer > *', { y: 30, opacity: 0, duration: .8, stagger: .09 }, '-=1')
       .from('.stats--bar li', { y: 20, opacity: 0, duration: .6, stagger: .08 }, '-=.6');
+    ensure(tl, 3500);
 
     // Тарелка медленно «крутится на круге» при прокрутке
     gsap.to('.hero__plate', {
@@ -171,7 +175,7 @@ const WEB3FORMS_KEY = '';
     ScrollTrigger.batch('[data-reveal]', {
       start: 'top 88%',
       once: true,
-      onEnter: batch => gsap.to(batch, { opacity: 1, y: 0, duration: .9, ease: 'power3.out', stagger: .1, overwrite: true })
+      onEnter: batch => ensure(gsap.to(batch, { opacity: 1, y: 0, duration: .9, ease: 'power3.out', stagger: .1, overwrite: true }), 2000)
     });
 
     // Счётчики цифр
@@ -183,7 +187,7 @@ const WEB3FORMS_KEY = '';
       el.textContent = fmt(0);
       ScrollTrigger.create({
         trigger: el, start: 'top 92%', once: true,
-        onEnter: () => gsap.to(obj, { v: end, duration: 1.8, ease: 'power2.out', onUpdate: () => { el.textContent = fmt(obj.v); } })
+        onEnter: () => ensure(gsap.to(obj, { v: end, duration: 1.8, ease: 'power2.out', onUpdate: () => { el.textContent = fmt(obj.v); } }), 2500)
       });
     });
 
