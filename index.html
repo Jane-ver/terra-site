@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Терра — авторская керамика для ресторанов и кафе</title>
+  <meta name="description" content="Мастерская «Терра» создаёт авторскую посуду на заказ для ресторанов и кафе: от эскиза и образцов глазури до партии, которая выдерживает посудомойку и плотные смены.">
+  <meta name="theme-color" content="#17120F">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Терра — посуда, которую гости фотографируют">
+  <meta property="og:description" content="Авторская керамика на заказ для ресторанов и кафе. Эскиз и образцы глазури — бесплатно.">
+  <meta property="og:image" content="assets/img/hero-plate.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Great+Vibes&family=Manrope:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<!-- Закреплённая шапка: появляется после первого экрана -->
+<header class="topbar" id="topbar" aria-label="Быстрая навигация">
+  <div class="topbar__inner">
+    <a href="#top" class="logo logo--dark logo--sm" aria-label="Терра — на главную"><span class="logo__blob" aria-hidden="true"></span><span class="logo__text">терра</span></a>
+    <nav class="topbar__nav" aria-label="Разделы">
+      <a href="#works">Работы</a><a href="#process">Как работаем</a><a href="#prices">Форматы и цены</a><a href="#faq">Вопросы</a>
+    </nav>
+    <a href="#contact" class="btn btn--primary btn--sm">Обсудить проект</a>
+  </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mmenu" id="mmenu" hidden>
+  <button class="mmenu__close" id="mmenu-close" aria-label="Закрыть меню"></button>
+  <nav class="mmenu__nav" aria-label="Меню">
+    <a href="#works">Работы</a>
+    <a href="#process">Как работаем</a>
+    <a href="#prices">Форматы и цены</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contact">Заявка</a>
+  </nav>
+  <a class="mmenu__tg" href="https://t.me/terra_ceramics" target="_blank" rel="noopener">Telegram: @terra_ceramics</a>
+</div>
+
+<main id="main">
+
+<!-- 01 — Первый экран -->
+<section class="section hero" id="top">
+  <div class="card card--sand hero__card">
+    <div class="hero__nav">
+      <a href="#top" class="logo logo--dark logo--sm" aria-label="Терра"><span class="logo__blob" aria-hidden="true"></span><span class="logo__text">терра</span></a>
+      <nav class="hero__links" aria-label="Основное меню">
+        <a href="#works">Работы</a><a href="#process">Как работаем</a><a href="#prices">Форматы и цены</a><a href="#faq">Вопросы</a>
+      </nav>
+      <div class="hero__contacts">
+        <a class="hero__tg" href="https://t.me/terra_ceramics" target="_blank" rel="noopener">Telegram ↗</a>
+        <a href="#contact" class="btn btn--primary">Обсудить проект</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
+    </div>
+
+    <div class="tags">
+      <span>Посуда на заказ для HoReCa</span><i></i><span>Эффектно и практично</span><i></i><span>От эскиза до поставки</span>
+    </div>
+
+    <div class="hero__body">
+      <div class="hero__wordmark logo logo--dark" aria-hidden="true"><span class="logo__blob"></span><span class="logo__text">терра</span></div>
+      <div class="hero__plate-wrap"><img class="hero__plate" src="assets/img/hero-plate.jpg" width="1024" height="1024" alt="Авторская тарелка с терракотовой глазурью и подачей морских гребешков"></div>
+      <div class="hero__offer">
+        <p class="script hero__script">авторская керамика для ресторанов</p>
+        <h1 class="h1">Посуда, которую<br>гости фотографируют</h1>
+        <p class="lead">Создаём коллекции под ваше меню и интерьер: от эскиза и образцов глазури до партии, которая выдерживает посудомойку и плотные смены.</p>
+        <div class="btn-row">
+          <a href="#contact" class="btn btn--primary">Получить концепцию посуды</a>
+          <a href="#works" class="btn btn--outline-dark">Смотреть работы</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="stats stats--bar" aria-label="Коротко о мастерской">
+    <li><b data-count="6">6</b><b class="u">&nbsp;лет</b><span>в профессии керамиста</span></li>
+    <li><b data-count="40">40</b><b class="u">+</b><span>ресторанов и кафе работают с нашей посудой</span></li>
+    <li><b>4–6</b><b class="u">&nbsp;нед.</b><span>от эскиза до первой партии</span></li>
+    <li><b>0</b><b class="u">&nbsp;₽</b><span>эскиз и образцы глазури для вашего меню</span></li>
+  </ul>
+</section>
+
+<!-- 02 — Проблема и цифры -->
+<section class="section problem" aria-labelledby="problem-title">
+  <div class="card problem__card">
+    <img class="card__bg" src="assets/img/bowl.jpg" alt="" loading="lazy" width="1536" height="1024">
+    <div class="frame-line" aria-hidden="true"></div>
+    <div class="problem__head">
+      <h2 class="h-xl" id="problem-title" data-split>Самая дорогая ошибка</h2>
+      <div class="subline"><span>В ресторане ▸</span><i></i><span>подавать блюда ▸</span><i></i><span>на той же посуде ▸</span><i></i><span>что и все</span></div>
+    </div>
+    <p class="script problem__accent" data-reveal>гости едят глазами</p>
+    <div class="problem__side problem__side--left" data-reveal>
+      <h3 class="h-sm">Первое впечатление — <br>ещё до вкуса</h3>
+      <p>Гость оценивает блюдо глазами за пару секунд. Типовая фарфоровая тарелка обнуляет работу шефа, дизайнера интерьера и фотографа.</p>
+    </div>
+    <div class="problem__side problem__side--right" data-reveal>
+      <h3 class="h-sm">Незаметность стоит <br>дороже смелости</h3>
+      <p>Одинаковая посуда не портит блюдо — она делает заведение похожим на соседнее. А похожие места не выкладывают в сторис и не советуют друзьям.</p>
+    </div>
+    <ul class="stats stats--inset">
+      <li><b>1–2</b><b class="u">&nbsp;сек.</b><span>нужно гостю, чтобы оценить подачу блюда</span></li>
+      <li><b data-count="70">70</b><b class="u">%</b><span>гостей фотографируют блюдо до первого укуса</span></li>
+      <li><b class="u">+</b><b data-count="15">15</b><b class="u">%</b><span>к среднему чеку при выразительной подаче</span></li>
+      <li><b data-count="60">60</b><b class="u">%</b><span>запоминают заведение по деталям сервировки</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 03 — Посуда как часть бизнеса -->
+<section class="section business" aria-labelledby="business-title">
+  <div class="card card--dark business__card">
+    <div class="business__cols" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <h2 class="business__title" id="business-title" data-reveal>
+      <span class="h-xl">Сильная посуда меняет</span>
+      <span class="business__line2"><span class="script script--xl">поведение</span> <span class="h-xl">гостей</span></span>
+    </h2>
+    <div class="business__grid">
+      <article class="bcard bcard--orange bcard--1" data-reveal>
+        <span class="bcard__num">01</span><h3>Больше внимания к блюду</h3>
+        <p>Выразительная тарелка становится рамкой для блюда: гость замечает подачу и запоминает её.</p>
+      </article>
+      <article class="bcard bcard--photo bcard--2" data-reveal>
+        <img src="assets/img/guest-phone.jpg" alt="Гость фотографирует десерт на авторской тарелке" loading="lazy" width="700" height="1050">
+        <div class="bcard__over"><span class="bcard__num">02</span><h3>Гости снимают контент</h3>
+        <p>Блюдо на авторской посуде — готовый кадр. Гости сами выкладывают сторис и приводят новых гостей.</p></div>
+      </article>
+      <article class="bcard bcard--dark bcard--3" data-reveal>
+        <span class="bcard__num">03</span><h3>Узнаваемость</h3>
+        <p>Посуда с характером работает как часть фирменного стиля — её узнают на фото.</p>
+      </article>
+      <article class="bcard bcard--orange bcard--4" data-reveal>
+        <span class="bcard__num">04</span><h3>Ощущение премиума</h3>
+        <p>Ручная работа поднимает восприятие уровня заведения и помогает обосновать чек.</p>
+      </article>
+      <figure class="bcard bcard--img bcard--5" data-reveal><img src="assets/img/cups.jpg" alt="Чашки ручной работы в кремовой и оранжевой глазури" loading="lazy" width="800" height="800"></figure>
+    </div>
+    <p class="business__caption" data-reveal>Посуда — не расходник, а инструмент, который работает на выручку каждый день</p>
+  </div>
+</section>
+
+<!-- 04 — Что мы делаем -->
+<section class="section products" id="products" aria-labelledby="products-title">
+  <div class="card card--sand">
+    <div class="block-head">
+      <h2 class="block-title" id="products-title" data-reveal><span class="h-xl h-xl--ink">Что мы делаем</span><span class="script script--lg">под ваше меню</span></h2>
+      <p class="lead" data-reveal>Каждую серию проектируем под конкретные блюда: размер порции, соус, температуру подачи и то, как официант несёт тарелку через зал.</p>
+    </div>
+    <div class="products__grid">
+      <article class="pcard" data-reveal><div class="pcard__img"><img src="assets/img/hero-plate.jpg" alt="Тарелка для подачи" loading="lazy" width="1024" height="1024"></div>
+        <h3>Тарелки и блюда для подачи</h3><p>Плоские, глубокие, с широким бортиком — под горячее, закуски и десерты.</p><span class="pcard__meta">Ø 16–32 см · от 30 шт.</span></article>
+      <article class="pcard" data-reveal><div class="pcard__img"><img src="assets/img/bowl.jpg" alt="Чаша с рельефной глазурью" loading="lazy" width="1536" height="1024"></div>
+        <h3>Чаши и боулы</h3><p>Для супов, салатов и азиатской кухни. Держат тепло и не скользят в руке.</p><span class="pcard__meta">0,3–1 л · от 30 шт.</span></article>
+      <article class="pcard" data-reveal><div class="pcard__img"><img src="assets/img/cups.jpg" alt="Чашки и пиала для кофейни" loading="lazy" width="800" height="800"></div>
+        <h3>Чашки и пиалы для кофеен</h3><p>Под эспрессо, капучино и фильтр. Удобная ручка, устойчивое дно.</p><span class="pcard__meta">80–350 мл · от 20 шт.</span></article>
+      <article class="pcard" data-reveal><div class="pcard__img"><img src="assets/img/platter.jpg" alt="Сервировочное блюдо и соусники" loading="lazy" width="800" height="800"></div>
+        <h3>Сервировочные блюда и соусники</h3><p>Большие формы для шеринга, сеты для соусов и закусок.</p><span class="pcard__meta">до 45 см · от 10 шт.</span></article>
+    </div>
+    <div class="chips" data-reveal>
+      <b>Также делаем:</b><span>Подставки под хлеб</span><span>Сахарницы и молочники</span><span>Вазочки для цветов</span><span>Клеймо с логотипом заведения</span>
+    </div>
+  </div>
+</section>
+
+<!-- 05 — Работы и кейсы -->
+<section class="section works" id="works" aria-labelledby="works-title">
+  <div class="card card--dark">
+    <h2 class="block-title block-title--row" id="works-title" data-reveal><span class="h-xl">Работы</span><span class="script script--lg script--peach">и что они дали</span></h2>
+    <article class="case case--main" data-reveal>
+      <div class="case__img"><img src="assets/img/case-restaurant.jpg" alt="Сервировка дегустационного сета на авторской посуде" loading="lazy" width="1400" height="933"></div>
+      <div class="case__body">
+        <span class="label">Ресторан авторской кухни · Москва</span>
+        <h3 class="h-md">Коллекция под дегустационный сет</h3>
+        <p><b>Задача:</b> выделить сет из 9 подач, чтобы его заказывали чаще, чем основное меню.</p>
+        <p><b>Решение:</b> 12 форм в трёх глазурях — от тёмной земли к огненно-оранжевой по ходу ужина.</p>
+        <div class="case__results">
+          <div><b class="num"><span>+</span><span data-count="40">40</span><span>%</span></b><span>отметок заведения в соцсетях за 3 месяца</span></div>
+          <div><b class="num">×2</b><span>чаще гости выбирают дегустационный сет</span></div>
+        </div>
+      </div>
+    </article>
+    <div class="cases">
+      <article class="case case--small" data-reveal>
+        <div class="case__img"><img src="assets/img/case-coffee.jpg" alt="Бариста подаёт фильтр-кофе в авторской чашке" loading="lazy" width="800" height="800"></div>
+        <div class="case__body"><span class="label">Кофейня specialty · Санкт-Петербург</span><h3 class="h-sm">Чашки под фильтр-кофе</h3>
+          <p>180 чашек и пиал в двух глазурях. Посуду продают на витрине как мерч.</p>
+          <b class="num"><span>+</span><span data-count="25">25</span><span>%</span></b><span class="case__cap">заказов фильтр-кофе после смены посуды</span></div>
+      </article>
+      <article class="case case--small" data-reveal>
+        <div class="case__img"><img src="assets/img/platter.jpg" alt="Сервировочное блюдо с соусниками" loading="lazy" width="800" height="800"></div>
+        <div class="case__body"><span class="label">Винный бар · Казань</span><h3 class="h-sm">Тапас-сеты для шеринга</h3>
+          <p>240 изделий: блюда, соусники и подставки, которые собираются в общий сет на стол.</p>
+          <b class="num">×1,5</b><span class="case__cap">чаще берут сеты закусок на компанию</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 06 — 4 слоя качества -->
+<section class="section layers" aria-labelledby="layers-title">
+  <div class="card card--dark layers__card">
+    <div class="layers__left">
+      <h2 class="layers__title" id="layers-title" data-reveal><span class="h-xxl">4 слоя</span><span class="script script--xl">сильной посуды</span></h2>
+      <div class="layers__photo" data-reveal><img src="assets/img/plates-stack.jpg" alt="Стопка тарелок ручной работы в мастерской" loading="lazy" width="1300" height="867"></div>
+    </div>
+    <div class="layers__right">
+      <p class="layers__statement" data-reveal>Премиальная посуда — это не только красивая форма. Её держат вместе четыре уровня, которые работают одновременно.</p>
+      <div class="layers__grid">
+        <article class="layer" data-reveal><div class="layer__img"><img src="assets/img/glaze-tiles.jpg" alt="Тестовые плитки глазури и эскизы форм" loading="lazy" width="700" height="467"></div><h3>Концепция</h3><p>Форма и цвет под ваше меню, интерьер и характер заведения</p></article>
+        <article class="layer" data-reveal><div class="layer__img"><img src="assets/img/waiter.jpg" alt="Официант несёт три тарелки" loading="lazy" width="700" height="467"></div><h3>Эргономика</h3><p>Удобно шефу, официанту и гостю: вес, бортик, устойчивость, стопка</p></article>
+        <article class="layer" data-reveal><div class="layer__img"><img src="assets/img/kiln.jpg" alt="Печь для обжига с посудой" loading="lazy" width="700" height="467"></div><h3>Прочность</h3><p>Высокотемпературный обжиг: посудомойка, плотные смены, перепады температур</p></article>
+        <article class="layer" data-reveal><div class="layer__img"><img src="assets/img/clay.jpg" alt="Глина и порошки глазури" loading="lazy" width="700" height="467"></div><h3>Материалы</h3><p>Пищевые глазури без свинца и проверенная глина с понятным составом</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 — Как мы работаем -->
+<section class="section process" id="process" aria-labelledby="process-title">
+  <div class="card process__card">
+    <img class="card__bg process__bg" src="assets/img/workshop.jpg" alt="" loading="lazy" width="1536" height="1024">
+    <div class="frame-line" aria-hidden="true"></div>
+    <h2 class="process__title h-xxl" id="process-title" data-split>Как мы работаем</h2>
+    <ol class="steps">
+      <li data-reveal><i class="dot" aria-hidden="true"></i><h3>01 · Бриф и задача</h3><p>Изучаем меню, концепцию и посадку — понимаем, какую роль играет подача</p></li>
+      <li data-reveal><i class="dot" aria-hidden="true"></i><h3>02 · Эскизы</h3><p>Предлагаем формы, глазури и сценарии подачи под ключевые блюда</p></li>
+      <li data-reveal><i class="dot" aria-hidden="true"></i><h3>03 · Образцы</h3><p>Обжигаем тестовые образцы — вы трогаете их и утверждаете вживую</p></li>
+      <li data-reveal><i class="dot" aria-hidden="true"></i><h3>04 · Тест на кухне</h3><p>Проверяем на реальной смене: посудомойка, стопки, вес, нагрев</p></li>
+      <li data-reveal><i class="dot" aria-hidden="true"></i><h3>05 · Производство</h3><p>Делаем партию вручную и проверяем каждое изделие</p></li>
+      <li data-reveal><i class="dot" aria-hidden="true"></i><h3>06 · Доставка и дозаказ</h3><p>Привозим, бережно упаковываем, храним рецепт глазури для дозаказов</p></li>
+    </ol>
+    <div class="guarantee" data-reveal><i></i><div><span>Храним рецепт глазури</span><b>дозаказ 3 года</b></div><i></i></div>
+  </div>
+</section>
+
+<!-- 08 — Форматы и цены -->
+<section class="section prices" id="prices" aria-labelledby="prices-title">
+  <div class="card card--sand">
+    <div class="block-head">
+      <h2 class="block-title" id="prices-title" data-reveal><span class="h-xl h-xl--ink">Форматы и цены</span><span class="script script--lg">без сюрпризов в смете</span></h2>
+      <p class="lead" data-reveal>Точную стоимость считаем после брифа. Эскиз и образцы глазури — бесплатно при заказе от пилотной серии.</p>
+    </div>
+    <div class="tiers">
+      <article class="tier" data-reveal>
+        <h3>Пилотная серия</h3><p class="tier__for">Для открытия заведения или теста новой подачи</p>
+        <p class="tier__price">от 45 000 ₽</p>
+        <ul><li>от 30 изделий</li><li>1–2 формы, 1 глазурь</li><li>эскиз и образцы глазури</li><li>срок — от 4 недель</li></ul>
+        <a href="#contact" class="btn btn--outline-dark btn--block" data-plan="Пилотная серия">Обсудить пилот</a>
+      </article>
+      <article class="tier tier--accent" data-reveal>
+        <span class="tier__badge">Чаще всего выбирают</span>
+        <h3>Коллекция под меню</h3><p class="tier__for">Для ресторанов, которые обновляют подачу целиком</p>
+        <p class="tier__price">от 220 000 ₽</p>
+        <ul><li>от 150 изделий</li><li>5–8 форм, 2–3 глазури</li><li>тестовая партия на кухне</li><li>срок — 6–8 недель</li><li>рецепт глазури храним 3 года</li></ul>
+        <a href="#contact" class="btn btn--primary btn--block" data-plan="Коллекция под меню">Получить расчёт</a>
+      </article>
+      <article class="tier" data-reveal>
+        <h3>Дозаказ и пополнение</h3><p class="tier__for">Для тех, кто уже работает с нашей посудой</p>
+        <p class="tier__price">от 1 500 ₽ / шт.</p>
+        <ul><li>от 10 изделий</li><li>та же форма и глазурь</li><li>срок — от 3 недель</li></ul>
+        <a href="#contact" class="btn btn--outline-dark btn--block" data-plan="Дозаказ">Сделать дозаказ</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 09 — О мастерской -->
+<section class="section about" aria-labelledby="about-title">
+  <div class="card card--dark about__card">
+    <div class="about__photo" data-reveal><img src="assets/img/master.jpg" alt="Анна Соколова, основательница мастерской «Терра», с тарелкой в руках" loading="lazy" width="900" height="1350"></div>
+    <div class="about__body">
+      <h2 class="about__name" id="about-title" data-reveal><span class="script script--lg script--peach">привет, я</span><span class="h-lg">Анна Соколова</span></h2>
+      <span class="label" data-reveal>Основательница мастерской «Терра»</span>
+      <p data-reveal>Я пришла в керамику из ресторанного дизайна и видела, как красивые интерьеры «ломаются» о типовую посуду. Так появилась «Терра» — мастерская, которая делает посуду как часть концепции заведения.</p>
+      <p data-reveal>Мы работаем небольшой командой и не берём больше проектов, чем можем сделать вручную и без спешки. Каждое изделие проходит через руки мастера и проверку на кухне.</p>
+      <ul class="facts" data-reveal>
+        <li><b><span data-count="6">6</span> лет</b><span>в керамике и ресторанном дизайне</span></li>
+        <li><b><span data-count="1240" data-format="space">1 240</span>°C</b><span>температура обжига каменной массы</span></li>
+        <li><b><span data-count="100">100</span>%</b><span>ручная работа и проверка каждого изделия</span></li>
+      </ul>
+      <div class="about__cta" data-reveal><a href="#contact" class="btn btn--outline-light">Приехать в мастерскую</a><span>Покажем образцы и обсудим проект за чашкой кофе</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 — Отзывы -->
+<section class="section reviews" aria-labelledby="reviews-title">
+  <div class="card reviews__card">
+    <div class="frame-line" aria-hidden="true"></div>
+    <h2 class="block-title block-title--center" id="reviews-title" data-reveal><span class="h-xl">Отзывы</span><span class="script script--lg">шефов и владельцев</span></h2>
+    <div class="reviews__list">
+      <figure class="review" data-reveal>
+        <blockquote><span class="review__q" aria-hidden="true">“</span>Гости начали снимать каждое блюдо сета. За первый месяц у нас было больше отметок в соцсетях, чем за полгода до этого.</blockquote>
+        <figcaption><span class="avatar">ИМ</span><span><b>Илья Морозов</b>шеф ресторана авторской кухни</span></figcaption>
+      </figure>
+      <figure class="review" data-reveal>
+        <blockquote><span class="review__q" aria-hidden="true">“</span>Для нас было важно, чтобы посуда выдерживала посудомойку и плотные смены. Через полгода — ни одного скола на глазури.</blockquote>
+        <figcaption><span class="avatar">МВ</span><span><b>Мария Ветрова</b>управляющая кофейни</span></figcaption>
+      </figure>
+      <figure class="review" data-reveal>
+        <blockquote><span class="review__q" aria-hidden="true">“</span>Понравилось, что всё прозрачно: эскизы, образцы, тест на кухне. Дозаказ сделали за три недели — один в один с первой партией.</blockquote>
+        <figcaption><span class="avatar">АК</span><span><b>Артём Ким</b>владелец винного бара</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 11 — Вопросы и ответы -->
+<section class="section faq" id="faq" aria-labelledby="faq-title">
+  <div class="card card--sand faq__card">
+    <div class="faq__left">
+      <h2 class="block-title" id="faq-title" data-reveal><span class="h-xl h-xl--ink">Вопросы</span><span class="script script--lg">и честные ответы</span></h2>
+      <p class="lead" data-reveal>Не нашли ответ? Напишите нам — отвечаем в течение часа в рабочее время.</p>
+      <a class="btn btn--primary" href="https://t.me/terra_ceramics" target="_blank" rel="noopener" data-reveal>Написать в Telegram</a>
+    </div>
+    <div class="faq__list">
+      <details class="qa" open><summary>Выдерживает ли посуда посудомойку и плотные смены?<i aria-hidden="true"></i></summary><div class="qa__a"><p>Да. Мы используем каменную массу и высокотемпературный обжиг, а каждую серию тестируем на вашей кухне до запуска в производство.</p></div></details>
+      <details class="qa"><summary>Какая минимальная партия?<i aria-hidden="true"></i></summary><div class="qa__a"><p>Пилотная серия — от 30 изделий, дозаказ — от 10 изделий.</p></div></details>
+      <details class="qa"><summary>Сколько времени занимает заказ?<i aria-hidden="true"></i></summary><div class="qa__a"><p>Пилотная серия — от 4 недель, коллекция под меню — 6–8 недель с учётом образцов и теста.</p></div></details>
+      <details class="qa"><summary>Что делать, если тарелка разбилась?<i aria-hidden="true"></i></summary><div class="qa__a"><p>Мы храним рецепт глазури и формы 3 года, поэтому дозаказ будет таким же, как первая партия.</p></div></details>
+      <details class="qa"><summary>Можно ли нанести логотип заведения?<i aria-hidden="true"></i></summary><div class="qa__a"><p>Да, ставим клеймо с логотипом на дно или на борт изделия.</p></div></details>
+      <details class="qa"><summary>Работаете ли вы с другими городами?<i aria-hidden="true"></i></summary><div class="qa__a"><p>Да, отправляем по всей России в надёжной упаковке, а образцы можно получить заранее.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 12 — Заявка -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="card contact__card">
+    <div class="contact__photo"><img src="assets/img/chef.jpg" alt="Шеф выкладывает блюдо на авторскую тарелку" loading="lazy" width="1024" height="1024">
+      <span class="logo logo--light logo--md contact__logo" aria-hidden="true"><span class="logo__blob"></span><span class="logo__text">терра</span></span></div>
+    <div class="contact__body">
+      <p class="script script--md script--peach" data-reveal>давайте начнём</p>
+      <h2 class="h-lg" id="contact-title" data-reveal>Если меню заслуживает внимания — подача тоже</h2>
+      <p class="contact__lead" data-reveal>Начнём с концепт-встречи на 30–45 минут. Вы получите идеи форм и глазурей под ключевые блюда, план работ и вилку бюджета.</p>
+      <form class="form" id="lead-form" novalidate data-reveal>
+        <input type="hidden" name="plan" id="plan-field" value="">
+        <label class="field"><span class="sr-only">Ваше имя</span><input name="name" type="text" placeholder="Ваше имя" autocomplete="name" required></label>
+        <label class="field"><span class="sr-only">Ресторан или кафе</span><input name="place" type="text" placeholder="Ресторан или кафе" autocomplete="organization"></label>
+        <label class="field"><span class="sr-only">Telegram или телефон</span><input name="contact" type="text" placeholder="Telegram или телефон" autocomplete="tel" required></label>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn--primary btn--block" type="submit">Записаться на концепт-встречу</button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 13 — Футер -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <a href="#top" class="logo logo--light logo--md" aria-label="Терра — наверх"><span class="logo__blob" aria-hidden="true"></span><span class="logo__text">терра</span></a>
+      <p>Авторская керамика для ресторанов и кафе</p>
+      <a href="#contact" class="btn btn--primary">Обсудить проект</a>
+    </div>
+    <nav class="footer__col" aria-label="Навигация в подвале"><b>Навигация</b><a href="#works">Работы</a><a href="#process">Как работаем</a><a href="#prices">Форматы и цены</a><a href="#faq">Вопросы</a></nav>
+    <div class="footer__col"><b>Контакты</b><a href="https://t.me/terra_ceramics" target="_blank" rel="noopener">Telegram: @terra_ceramics</a><a href="tel:+74951234567">+7 (495) 123-45-67</a><a href="mailto:hello@terra-ceramics.ru">hello@terra-ceramics.ru</a></div>
+    <div class="footer__col"><b>Мастерская</b><span>Москва, Гончарная ул., 12, стр. 3</span><span>Пн–Пт 10:00–19:00</span><span>Визиты по записи</span></div>
+  </div>
+  <div class="footer__bottom"><span>© 2026 Терра. Все права защищены</span><a href="privacy.html">Политика конфиденциальности</a><span>ИП Соколова Анна Викторовна · ИНН 770312345678</span></div>
+  <div class="footer__mark logo logo--light" aria-hidden="true"><span class="logo__blob"></span><span class="logo__text">терра</span></div>
+</footer>
+
+<a href="#contact" class="mobile-cta btn btn--primary" id="mobile-cta">Обсудить проект</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
